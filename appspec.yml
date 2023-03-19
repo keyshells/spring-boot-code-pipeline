@@ -1,1 +1,9 @@
-df
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu
+hooks:
+  ApplicationStart:
+    - location: install.sh
+      timeout: 1000
